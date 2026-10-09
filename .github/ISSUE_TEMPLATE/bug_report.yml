@@ -1,0 +1,63 @@
+name: Bug report
+description: Report a Runtime problem using sanitized reproduction details.
+title: "Bug: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do not attach PDFs, workbooks, screenshots containing personal information, crash dumps, credentials, or other sensitive material.** This is a public issue. Provide sanitized reproduction details only.
+  - type: input
+    id: runtime_version
+    attributes:
+      label: Runtime version
+      placeholder: For example, 0.5.0-beta.1
+    validations:
+      required: true
+  - type: dropdown
+    id: operating_system
+    attributes:
+      label: Operating system
+      options:
+        - Windows x64
+        - Debian amd64
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Use fictional or sanitized filenames and values. Do not attach a document.
+      placeholder: |
+        1. Import the signed Demo Pack.
+        2. Open a sanitized sample PDF.
+        3. Scan or process it.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+      description: Do not paste document text, personal data, secrets, or confidential output.
+    validations:
+      required: true
+  - type: textarea
+    id: sanitized_notes
+    attributes:
+      label: Optional sanitized notes
+      description: No files or sensitive details.
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I have not attached sensitive documents or included personally identifying information.
+          required: true

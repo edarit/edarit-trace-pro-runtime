@@ -1,0 +1,73 @@
+name: Custom Trace Pack request
+description: Describe a document-review workflow for an initial public scope discussion.
+title: "Custom Pack request: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **PUBLIC ISSUE — DO NOT upload or paste confidential documents, PDFs, spreadsheets, personal information, financial or institutional records, customer files, passwords, credentials, or proprietary business data.**
+
+        Use this form for a sanitized problem description only. Any private file transfer must be agreed separately.
+  - type: textarea
+    id: document_types
+    attributes:
+      label: What types of documents do you process?
+      description: Describe layouts or document categories generally. Do not include real records or identifying details.
+      placeholder: For example, searchable supplier invoices from a few layouts.
+    validations:
+      required: true
+  - type: textarea
+    id: repetitive_task
+    attributes:
+      label: What repetitive review task are you trying to simplify?
+    validations:
+      required: true
+  - type: textarea
+    id: fields_checks
+    attributes:
+      label: What fields or checks matter?
+      description: Describe the checks in general terms; do not include actual values from private documents.
+    validations:
+      required: true
+  - type: dropdown
+    id: reference_data
+    attributes:
+      label: Do the checks use Excel or CSV reference data?
+      options:
+        - Yes
+        - No
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: layout_count
+    attributes:
+      label: Roughly how many document layouts are involved?
+      placeholder: For example, one or two
+    validations:
+      required: false
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Which platform do you need?
+      options:
+        - Windows x64
+        - Debian amd64
+        - Both
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: other_requirements
+    attributes:
+      label: Any other requirements?
+      description: Keep this description sanitized. Do not attach files or include personal, financial, institutional, customer, or proprietary details.
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I have not included confidential information, personal data, or attachments in this public request.
+          required: true
