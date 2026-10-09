@@ -1,0 +1,16 @@
+EDARIT Trace Pro Community Runtime 0.5.0-beta.1 — expected artifact identities
+
+This preparation repository does not contain the Windows or Debian binaries. Their expected hashes below come from prior platform validation; they were not independently recomputed in this repository-preparation slice. The separate Release Cycle must verify the actual files before publication.
+
+Expected Windows release candidate — not included:
+052c7424cbd047220e8b68f8a06fe2aa2cc5c5042bcc3af218ed95061f4ca17f  EDARIT-Trace-Pro-Runtime-0.5.0-beta.1-win64.exe
+9243d4ff129de8e7f8bead0dc0c06ffaa14558622ec270ac1acc7b836bf6fff2  EDARIT-Trace-Pro-Runtime-0.5.0-beta.1-win64.zip
+
+Expected Debian release candidate — not included:
+cd2a6dbafe061de389a1ffb13eb3870a335cae080e318ed46c603ff2abc19fec  edarit-trace-pro-runtime_0.5.0~beta1-1_amd64.deb
+
+Public Demo and samples — included in this repository; SHA-256 recomputed from the approved files during repository preparation:
+44f31edd5865fdc6575b983055afc0d703f59a1df218e86c7b9ea9d3e25b9dcb  demo/invoice-po-lite-demo.tracepack
+2a27f7400cbb017554045b88c3892a58c3b86381ec51efb31bd3f4a9641f2793  samples/01_known_po_alpha.pdf
+3147090b64d3c3d0fa5740a37c83336983af29a88796efa959bd395b32987106  samples/02_known_po_beta.pdf
+913f3b0c477270fa89aa111994287910483342dbd59ff3b77e2052a6f7ca02fe  samples/03_unknown_po.pdf
