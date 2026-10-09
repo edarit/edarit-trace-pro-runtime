@@ -21,9 +21,16 @@ Trace Pro helps people repeat configured document checks and keep evidence of wh
 
 The `0.5.0-beta.1` Community Runtime candidates were validated on Windows x64 and Debian amd64. See the [Quick Start](docs/QUICKSTART.md) and [User Guide](docs/USER_GUIDE.md) for the platform-specific workflow.
 
-## Download status
+## 0.5.0 Beta 1 release preparation
 
-**Windows and Debian beta downloads are being prepared.** Download links will be available in this repository's GitHub Releases after a separate Release Cycle. No EXE, DEB, or ZIP download is published yet. This repository currently provides documentation and fictional Demo materials.
+The Windows x64 EXE/ZIP and Debian amd64 package for `0.5.0-beta.1` have been recovered and verified. The files are not published yet: beta terms and bundled third-party licensing review remain pending, and publication requires separate operator authorization. The [release plan](RELEASE_PLAN.md) records the gates. Once a GitHub prerelease is authorized and published, the intended downloads will be:
+
+- [Windows x64 portable ZIP](https://github.com/edarit/edarit-trace-pro-runtime/releases/download/v0.5.0-beta.1/EDARIT-Trace-Pro-Runtime-0.5.0-beta.1-win64.zip)
+- [Windows x64 EXE](https://github.com/edarit/edarit-trace-pro-runtime/releases/download/v0.5.0-beta.1/EDARIT-Trace-Pro-Runtime-0.5.0-beta.1-win64.exe)
+- [Debian amd64 package](https://github.com/edarit/edarit-trace-pro-runtime/releases/download/v0.5.0-beta.1/edarit-trace-pro-runtime_0.5.0~beta1-1_amd64.deb)
+- [Release SHA-256 checksums](https://github.com/edarit/edarit-trace-pro-runtime/releases/download/v0.5.0-beta.1/SHA256SUMS.txt)
+
+These planned URLs are not active downloads until publication. The EXE, ZIP, and DEB are not stored in this Git repository.
 
 ## Try the Demo
 
@@ -62,4 +69,4 @@ This is beta software. Matching depends on the supplied Pack and the PDF layout.
 
 ## Terms
 
-See [TERMS.md](TERMS.md). **Terms review is required before any beta binary release.** No binary release is currently available.
+See [TERMS.md](TERMS.md) and the [proposed beta notice](docs/BETA_TERMS_PROPOSAL.md). **Operator approval of the final terms and confirmation of bundled third-party licensing are required before any beta binary release.** No binary release is currently available.
